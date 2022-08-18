@@ -24,9 +24,80 @@
 
         <main>
             <form>
-                <label for="nombreapellido">Nombre y apellido</label>
-                <input type="text" id="nombreapellido">
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
+        
+                <label for="correoelectronico">Correo Electrónico</label>
+                <input type="email" id="correoelectronico" class="input-padron" required placeholder="a@a.cl">
+        
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XXX) XXXX XXXX">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+
+                <!-- radio button -->
+                <fieldset>
+                    <legend>¿Cómo le gustaría ser contactado?</legend>
+        
+                    <label for="radio-email">
+                        <input type="radio" name="contacto" value="email" id="radio-email">Email
+                    </label>
+                    
+    
+                    <label for="radio-telefono">
+                        <input type="radio" name="contacto" value="telefono" id="radio-telefono">Telefono
+                    </label>
+                    
+    
+                    <label for="radio-whatsapp">
+                        <input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp
+                    </label>
+                    
+                </fieldset>
+                
+                <!-- selector -->
+                <fieldset>
+
+                    <legend>¿En cuál horario prefiere ser atendido?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+
+                </fieldset>
+                
+                <!-- checkbox -->
+                <label class="checkbox"><input type="checkbox" checked>Le gustaría recibir información de la Barbería Alura?</label>
+                
+
+                <input type="submit" value="Enviar formulario" class="enviar">
             </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+
         </main>
 
         <footer>
